@@ -1,0 +1,15 @@
+<!-- Root element -->
+<!ELEMENT bookstore (book+)>
+
+<!-- Book structure -->
+<!ELEMENT book (title, author, genre, price, publish_date)>
+
+<!-- Attribute -->
+<!ATTLIST book id ID #REQUIRED>
+
+<!-- Elements -->
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT genre (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+<!ELEMENT publish_date (#PCDATA)>
